@@ -1,0 +1,122 @@
+/* Ensure full height and no default margins */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Header */
+.header {
+    background-color: #eee;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    border-bottom: 1px solid #ccc;
+    
+}
+.header p {
+    width: 250px;
+    height: 250px;
+    margin: 0;
+    font-size: 100px;
+    color: #333;
+}
+.header a {
+    text-decoration: none;
+    color: #333;
+    font-size: 50px;
+}
+
+/* Main layout fills remaining height */
+.container {
+    display: flex;
+    height: calc(100vh - 48px); /* Adjust if header height changes */
+    overflow: hidden;
+}
+.container form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Example width */
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+  }
+/* Sidebar */
+.sidebar {
+    width: 200px;
+    background-color: #f1f1f1;
+    padding: 20px 10px;
+    border-right: 1px solid #ccc;
+    overflow-y: auto;
+}
+
+.sidebar a {
+    display: block;
+    margin-bottom: 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+/* Product area uses remaining space and scrolls if needed */
+.products {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    overflow-y: auto;
+    background-color: #fff;
+}
+
+/* Individual product cards */
+.product {
+    width: 150px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.product-image {
+    width: 100%;
+    height: 150px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.product-heart {
+    color: #666;
+    font-size: 20px;
+    margin-right: 5px;
+}
+/*box*/
+.box {
+    width: 500px;
+    height: 500px;
+    background: #007bff;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column; /* Allows multiple lines stacking */
+    border: 2px solid #007bff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+.box h1 {
+    font-size: 100px;
+    margin-top:10px;
+    color: #fff;
+}
+.boxcontent{
+    font-size: 50px;
+    margin-top:-50px;
+    color: #fff;
+
+}
