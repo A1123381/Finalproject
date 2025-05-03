@@ -15,7 +15,7 @@ html, body {
     justify-content: flex-start;
     gap: 20px;
     border-bottom: 1px solid #ccc;
-    
+    font-size: 50px;
 }
 .header p {
     width: 250px;
@@ -26,7 +26,7 @@ html, body {
 }
 .header a {
     text-decoration: none;
-    color: #333;
+    color: #940a0a;
     font-size: 50px;
 }
 
@@ -97,14 +97,13 @@ html, body {
 .box {
     width: 500px;
     height: 500px;
-    background: #007bff;
+    background: orangered;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     flex-direction: column; /* Allows multiple lines stacking */
-    border: 2px solid #007bff;
     border-radius: 16px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
@@ -118,5 +117,61 @@ html, body {
     font-size: 50px;
     margin-top:-50px;
     color: #fff;
+    background: orangered;
 
+}
+.sidebar a.active {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.product-price {
+    color: #e44d26;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.product-category {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.product img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 
+.admin-panel{
+    width: 100%;
+    height: 100%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+}
+.admin-menu {
+    width: 100 vw;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #333;    
+    justify-content: center; /* Centers items vertically */
+    align-items: center; /* Centers items horizontally */
+    margin: 0 auto; /* Centers the div itself */
+    border: 2px solid #333;
+    border-radius: 12px;
+}
+.admin-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px 20px;
+    border-radius: 4px;
+background-color: orangered;
+    transition: background-color 0.3s ease;
+    border-radius: 12px; /* smooth curved edges */
 }
