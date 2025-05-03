@@ -36,7 +36,7 @@ if ($conn->connect_error) {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    background-color: white;    
+
     justify-content: center; /* Centers items vertically */
     align-items: center; /* Centers items horizontally */
     margin: 0 auto; /* Centers the div itself */
@@ -79,6 +79,14 @@ if ($conn->connect_error) {
             color: #333;
             margin-bottom: 20px;
         }
+        .header a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 50px;
+}
+.user-name{
+    color: #007bff;
+}
     </style>
 </head>
 <body>
@@ -90,7 +98,7 @@ if ($conn->connect_error) {
     <div class="container">
         <div class="user-panel">
             <h1>用戶中心</h1>
-            <p class="welcome-text">歡迎回來，<?php echo htmlspecialchars($_SESSION['uUser']); ?>！</p>
+            <p class="welcome-text">歡迎回來，<span class="user-name"><?php echo htmlspecialchars($_SESSION['uUser']); ?></span>！</p>
             
             <div class="user-menu">
                 <a href="my_profile.php" class="menu-item">
@@ -98,19 +106,19 @@ if ($conn->connect_error) {
                     <div class="menu-text">個人資料</div>
                 </a>
                 
-                <a href="my_orders.php" class="menu-item">
+                <a href="my_trades.php" class="menu-item">
                     <div class="menu-icon">🛍️</div>
-                    <div class="menu-text">我的訂單</div>
+                    <div class="menu-text">我的交易</div>
                 </a>
                 
-                <a href="my_favorites.php" class="menu-item">
+                <a href="my_products.php" class="menu-item">
                     <div class="menu-icon">❤️</div>
-                    <div class="menu-text">我的收藏</div>
+                    <div class="menu-text">我的商品</div>
                 </a>
                 
-                <a href="shopping_cart.php" class="menu-item">
+                <a href="upload_product.php" class="menu-item">
                     <div class="menu-icon">🛒</div>
-                    <div class="menu-text">購物車</div>
+                    <div class="menu-text">上傳商品</div>
                 </a>
                 
                 <a href="my_messages.php" class="menu-item">

@@ -55,6 +55,9 @@ if(!isset($_SESSION['uUser']) || $_SESSION['role'] !== 'admin') {
             color: #333;
             margin-bottom: 20px;
         }
+        .user-name{
+    color: #e65100;
+}
     </style>
 </head>
 <body>
@@ -66,7 +69,7 @@ if(!isset($_SESSION['uUser']) || $_SESSION['role'] !== 'admin') {
     <div class="container">
         <div class="admin-panel">
             <h1>管理員控制台</h1>
-            <p class="welcome-text">歡迎回來，管理員 <?php echo htmlspecialchars($_SESSION['uUser']); ?>！</p>
+            <p class="welcome-text">歡迎回來，<span class='user-name'>管理員 <?php echo htmlspecialchars($_SESSION['uUser']); ?></span>！</p>
             
             <div class="admin-menu">
                 <a href="manage_users.php" class="menu-item">
@@ -84,7 +87,7 @@ if(!isset($_SESSION['uUser']) || $_SESSION['role'] !== 'admin') {
                     <div class="menu-text">分類管理</div>
                 </a>
                 
-                <a href="view_orders.php" class="menu-item">
+                <a href="manage_trades.php" class="menu-item">
                     <div class="menu-icon">🛍️</div>
                     <div class="menu-text">交易管理</div>
                 </a>
@@ -99,9 +102,9 @@ if(!isset($_SESSION['uUser']) || $_SESSION['role'] !== 'admin') {
                     <div class="menu-text">系統設定</div>
                 </a>
                 
-                <a href="view_statistics.php" class="menu-item">
-                    <div class="menu-icon">📊</div>
-                    <div class="menu-text">統計報表</div>
+                <a href="admin_trades.php" class="menu-item">
+                    <div class="menu-icon">⚖️</div>
+                    <div class="menu-text">交易審核</div>
                 </a>
                 
                 <a href="manage_promotions.php" class="menu-item">

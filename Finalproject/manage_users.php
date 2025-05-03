@@ -61,12 +61,27 @@ if ($conn->connect_error) {
             background-color: #6c757d;
             cursor: not-allowed;
         }
+        .header {
+        background-color: #eee;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: flex-start;
+        gap: 20px;
+        border-bottom: 1px solid #ccc;
+        font-size: 50px;
+        }
+
+        .header a {
+        text-decoration: none;
+        color: #940a0a;
+        font-size: 50px;
+        }
     </style>
 </head>
 <body>
     <div class="header">
-        <h1>用戶管理</h1>
-        <a href="admin_dashboard.php" style="font-size: 18px;">返回控制台</a>
+        用戶管理
+        <a href="admin_dashboard.php" >返回控制台</a>
     </div>
     
     <div class="container">

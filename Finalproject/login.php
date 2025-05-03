@@ -5,6 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>登入</title>
     <link rel='stylesheet' href='style.css'>
+    <style>
+        .header a{
+            text-decoration: none;
+            color: #007bff;
+            font-size: 50px;
+        }
+        .box {
+    width: 500px;
+    height: 500px;
+    background: #007bff;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column; /* Allows multiple lines stacking */
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+.box h1 {
+    font-size: 100px;
+    margin-top:10px;
+    color: #fff;
+}
+.boxcontent{
+    font-size: 50px;
+    margin-top:-50px;
+    color: #fff;
+    background: #007bff;
+
+}
+    </style>
 </head>
 <body>
     <?php
